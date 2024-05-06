@@ -8,6 +8,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: vv03-argocd-applications/directoryOfmanifests
+    path: v03-argocd-applications/directoryOfmanifests
     repoURL: https://github.com/zahra-ehghaghi/argocd.git
     targetRevision: main
