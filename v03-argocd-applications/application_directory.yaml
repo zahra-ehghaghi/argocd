@@ -1,17 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: application-from-scratch
+  name: application-directory
 spec:
   destination:
-    namespace: default
+    namespace: directory
     server: https://kubernetes.default.svc
   project: default
   source:
-    helm:
-      releaseName: application-from-helm
-      valueFiles:
-        - custome-values.yaml
-    path: v03-argocd-applications/helm/nginx
+    path: vv03-argocd-applications/directoryOfmanifests
     repoURL: https://github.com/zahra-ehghaghi/argocd.git
     targetRevision: main
